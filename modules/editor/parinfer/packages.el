@@ -12,5 +12,5 @@
   (autoload 'evil-define-key "evil-core" nil nil 'macro))
 
 (if (featurep! +rust)
-    (package! parinfer-rust-mode :pin "67eed38129c28f087c0b5dffe8a790978d41a8c1")
+    (package! parinfer-rust-mode :pin "251883ab238eb0b131c7b0b22d7307a6ed281396")
   (package! parinfer :pin "8659c99a9475ee34af683fdf8f272728c6bebb3a"))
