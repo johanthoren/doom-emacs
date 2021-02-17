@@ -27,9 +27,9 @@
   ;; the correct download location.
   (defvar parinfer-rust--lib-name (cond ((eq system-type 'darwin)
                                          "parinfer-rust-darwin.so")
-                                       ((eq system-type 'gnu/linux)
+                                        ((eq system-type 'gnu/linux)
                                          "parinfer-rust-linux.so")
-                                       ((eq system-type 'windows-nt)
+                                        ((eq system-type 'windows-nt)
                                          "parinfer-rust-windows.dll")))
   (use-package! parinfer-rust-mode
     :hook ((emacs-lisp-mode
