@@ -36,15 +36,15 @@
                                         "parinfer-rust-windows.dll")))
   (use-package! parinfer-rust-mode
     :hook ((emacs-lisp-mode
-                clojure-mode
-                scheme-mode
-                lisp-mode
-                racket-mode
-                hy-mode) . parinfer-rust-mode)
+            clojure-mode
+            scheme-mode
+            lisp-mode
+            racket-mode
+            hy-mode) . parinfer-rust-mode)
     :init
     (setq! parinfer-rust-library (concat user-emacs-directory
-                                        ".local/etc/parinfer-rust/"
-                                        parinfer-rust--lib-name))
+                                         ".local/etc/parinfer-rust/"
+                                         parinfer-rust--lib-name))
     :config
     (map! :map parinfer-rust-mode-map
           :localleader
